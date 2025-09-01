@@ -1,6 +1,7 @@
-import { FC } from "react";
+
 import Image from "next/image";
-const AboutPage: FC = () => {
+
+const AboutPage = () => {
     return (
         <div className="w-full bg-white font-sans flex flex-col items-center gap-6">
             <section className="flex flex-col md:flex-row items-center justify-center px-6 md:px-20 lg:px-32 xl:px-40 py-16 gap-20  w-full">
@@ -20,7 +21,7 @@ const AboutPage: FC = () => {
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
                         ABOUT US
                     </h2>
-                    <p className="text-gray-600 leading-relaxed mb-4 text-base md:text-lg lg:text-xl">
+                    <p className="text-gray-600 leading-relaxed mb-4 text-base md:text-[36px] lg:text-xl">
                         Our solution brings real-time carbon tracking directly to the
                         factories. Using smart CO₂ sensors, anemometer, and temperature
                         probes powered by solar energy, we measure and calculate emissions
@@ -35,7 +36,7 @@ const AboutPage: FC = () => {
                             </p>
                         </li>
                         <li className="flex items-start gap-3">
-                            <Image src="/images/factory.svg" alt="Carbon Tracking" width={24} height={24} />
+                            <Image src="/images/factory.svg" alt="Carbon Tracking" width={24} height={24}/>
                             <p>
                                 <span className="font-semibold">Carbon Tracking</span> Real-time
                                 monitoring from chimney to dashboard
